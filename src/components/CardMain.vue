@@ -98,18 +98,19 @@ export default {
     flex-direction: row;
     text-align: left;
     max-width: 95%;
+    margin: 0;
   }
   .section {
-    padding: 0 6rem;
+    padding: 0 10rem;
     margin: 0rem;
     flex: 1 1 50%;
   }
   .card-main-title {
-    font-size: 3.1rem;
+    font-size: 2.6vw;
     margin-bottom: 2.3rem;
   }
   .card-main-paragraph {
-    font-size: 1.3rem;
+    font-size: 1.2vw;
     margin-bottom: 6rem;
   }
   .statistics {

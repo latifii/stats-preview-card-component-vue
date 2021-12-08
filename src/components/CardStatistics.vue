@@ -48,10 +48,10 @@ export default {
 }
 @media (min-width: 1000px) {
   .value {
-    font-size: 1.5rem;
+    font-size: 1.8vw;
   }
   .activity {
-    font-size: 1.1rem;
+    font-size: 1vw;
   }
 }
 </style>
