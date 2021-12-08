@@ -1,5 +1,5 @@
 <template>
-  <card-main></card-main>
+  <CardMain/>
 </template>
 
 <script>

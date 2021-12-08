@@ -12,17 +12,16 @@
         </p>
       </article>
       <div class="statistics">
-
-      <card-statistics
-        v-for="item in cardStatistics"
-        :key="item.id"
-        :value="item.value"
-        :activity="item.activity"
-      ></card-statistics>
+        <CardStatistics
+          v-for="item in cardStatistics"
+          :key="item.id"
+          :value="item.value"
+          :activity="item.activity"
+        />
       </div>
     </section>
     <div class="card-img">
-      <img  src="../assets/image-header-desktop.jpg" alt="image header">
+      <img src="../assets/image-header-desktop.jpg" alt="image header" />
     </div>
   </div>
 </template>
@@ -30,7 +29,7 @@
 <script>
 import CardStatistics from "./CardStatistics.vue";
 export default {
-  name : 'CardMain',
+  name: "CardMain",
   components: { CardStatistics },
   data() {
     return {
@@ -57,9 +56,9 @@ export default {
 </script>
 
 <style scoped>
-.main{
+.main {
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   background-color: var(--dark-desaturated-blue);
@@ -69,58 +68,56 @@ export default {
   overflow: hidden;
   text-align: center;
 }
-.section{
-  /* width: 50%; */
-  
- padding: 4rem 3rem;
+.section {
+  padding: 4rem 3rem;
 }
-.card-main-title{
-  font-size:2.8rem;
+.card-main-title {
+  font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
-.strong-word{
+.strong-word {
   color: var(--soft-violet);
 }
-.card-main-paragraph{
+.card-main-paragraph {
   font-size: 1.5rem;
   color: var(--slightly-transparent-white-main-paragraph);
   line-height: 1.7;
   margin-bottom: 3rem;
 }
-.card-img{
+.card-img {
   display: flex;
-    background: #5d0788;
+  background: #5d0788;
 }
-.card-img img{
+.card-img img {
   width: 100%;
-  opacity: .5;
-   }
-@media (min-width:1000px){
-  .main{
+  opacity: 0.5;
+}
+@media (min-width: 1000px) {
+  .main {
     flex-direction: row;
     text-align: left;
     max-width: 95%;
   }
-  .section{
-    padding:0 6rem;
+  .section {
+    padding: 0 6rem;
     margin: 0rem;
     flex: 1 1 50%;
   }
-  .card-main-title{
+  .card-main-title {
     font-size: 3.1rem;
     margin-bottom: 2.3rem;
   }
-  .card-main-paragraph{
-    font-size:1.3rem;
-    margin-bottom:6rem;  
+  .card-main-paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 6rem;
   }
-  .statistics{
+  .statistics {
     display: flex;
     gap: 5rem;
     margin-top: 8rem;
   }
-  .card-img{
+  .card-img {
     flex: 1 1 50%;
   }
 }
